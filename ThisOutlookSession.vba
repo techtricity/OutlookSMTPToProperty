@@ -4,7 +4,6 @@ Private WithEvents m_SentItems As Outlook.Items
 Public Sub Application_Startup()
   Dim Session As Outlook.NameSpace
   Set Session = Application.Session
-
   Set m_Inbox = Session.GetDefaultFolder(olFolderInbox).Items
 End Sub
 
